@@ -86,13 +86,15 @@
 }
 
 html, body {
-  height: 100%;
+  /* Updated to allow vertical scrolling */
+  min-height: 100%;
   font-family: var(--font-sans);
   font-size: 16px;
   line-height: 1.5;
   color: var(--color-text);
   background-color: var(--color-bg);
   overflow-x: hidden;
+  overflow-y: auto;
   transition: background-color var(--transition-normal), color var(--transition-normal);
 }
 
